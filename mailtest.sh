@@ -13,7 +13,7 @@ EOF
 
 cat alldomains-without-apiaryio | while read domain
 do
-SENDER=jasan@$domain
+SENDER=jasan+dmarc@$domain
 echo Sending mail as $SENDER
 mailx -t -r $SENDER <<EOF
 From: $FROM <$SENDER>
