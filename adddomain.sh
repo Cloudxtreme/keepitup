@@ -25,7 +25,7 @@ EOF
 myrw
 
 cat <<EOF
-mail.apiary.tk
+mail.apiary-internal.com
 v=spf1 mx -all
 _dmarc
 v=DMARC1; p=none; rua=mailto:$DMAIL@$DOMAIN
